@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload & Share</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload & Share Files</h1>
+        <div class="upload-section">
+            <label for="fileInput" class="file-label">
+                Choose a File
+                <input type="file" id="fileInput" />
+            </label>
+            <p id="fileName"></p>
+            <button class="upload-btn" onclick="uploadFile()">Upload</button>
+        </div>
+        <div class="file-info" id="fileInfo"></div>
+        <div class="progress-section" id="progressSection">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <div class="share-section" id="shareSection">
+            <p>File Uploaded Successfully!</p>
+            <div class="link-container">
+                <input type="text" id="shareableLink" readonly />
+                <button class="copy-btn" onclick="copyLink()">Copy Link</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p> A web based easy and smooth file sharing tool.</p>
+            <ul class="footer-links">
+                <li><a href="https://amitfr.tech">About me</a></li>
+                <li><a href="https://github.com/Amit00008/">github</a></li>
+            </ul>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

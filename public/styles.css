@@ -1,0 +1,238 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column; /* Change to column for vertical layout */
+    min-height: 100vh; /* Ensure body takes full height */
+    margin: 0; /* Remove margin to prevent any extra spacing */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+}
+
+
+
+
+.container {
+    background-color: #433b3b;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+    margin: 100px; /* Optional: add some margin if needed */
+    box-shadow: #ddd;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ededed;
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.file-label {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-label:hover {
+    background-color: #0056b3;
+}
+
+.file-label input[type="file"] {
+    display: none;
+}
+
+.upload-btn {
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.upload-btn:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.file-info {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #f1f1f1;
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+}
+
+.progress-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 0;
+    height: 8px;
+    background-color: #007bff;
+    border-radius: 4px;
+    transition: width 0.4s ease;
+}
+
+.share-section {
+    display: none;
+    margin-top: 20px;
+}
+
+.share-section p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #d7d7d7;
+}
+
+.link-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#shareableLink {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #eeeded;
+    transition: background-color 0.3s ease;
+}
+
+#shareableLink:focus {
+    background-color: #e9ecef;
+    outline: none;
+}
+
+.copy-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.copy-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .upload-btn, .file-label {
+        padding: 10px 20px;
+    }
+
+    #shareableLink {
+        width: 70%;
+    }
+}
+
+/* Additional styling for the file name display */
+#fileName {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #f5f5f5;
+    font-weight: 500;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Push the footer to the bottom */
+    width: 100%; /* Ensure footer takes full width */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media a:hover {
+    text-decoration: underline;
+}
