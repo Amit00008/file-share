@@ -26,6 +26,13 @@ To get started with the file sharing tool, follow these steps:
 3. Share the unique link with others to allow them to download the file.
 4. To download a file shared with you, simply access the unique link in your web browser.
 
+
+## Demo
+
+<img src="ss.png">
+
+<a href="https://file-share-8ryy.onrender.com">Click here</a>
+
 ## Contributing
 
 Contributions to this project are welcome. To contribute, please follow these steps:
